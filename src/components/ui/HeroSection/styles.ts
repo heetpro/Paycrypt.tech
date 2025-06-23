@@ -2,38 +2,21 @@
 import { styled } from 'styled-components';
 
 export const Wrapper = styled.section`
-  margin-top: 6.25rem;
 `;
 
 export const Inner = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  max-width: 56rem;
+  max-width: 70rem;
   margin: 0 auto;
+  height: 100vh;
   text-align: center;
   background-position: top center;
   background-size: contain;
 `;
 
-export const Pill = styled.div`
-  display: flex;
-  padding: 0.375rem 0.75rem;
-  justify-content: center;
-  align-items: center;
-  gap: 0.625rem;
-  border-radius: 6.25rem;
-  border: 0.2px solid #989898;
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(10px);
-  margin-bottom: 1rem;
-
-  span {
-    color: var(--light-gray);
-    font-size: 1rem;
-    font-weight: 400;
-  }
-`;
 
 export const HeroTextContainer = styled.div`
   display: flex;
@@ -42,14 +25,13 @@ export const HeroTextContainer = styled.div`
   padding-bottom: 2rem;
 
   h1 {
-    font-size: 6rem;
-    font-weight: 400;
   }
 
   p {
     max-width: 41.75rem;
-    color: #bdbdbd;
-    font-size: 1.5rem;
+    color: #ffffff;
+    opacity: 0.9;
+    font-size: clamp(0.875rem, 0.75vw, 100rem);
     font-weight: 400;
     margin: 0 auto;
   }

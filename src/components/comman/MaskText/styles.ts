@@ -3,10 +3,11 @@ import { styled } from 'styled-components';
 
 export const Body = styled.div`
   h1 {
-    font-family: 'uto', sans-serif !important;
+    font-family: 'Fontspring-DEMO-uto-regular', sans-serif !important;
+    font-weight: 600;
   },
   p {
-    font-family: 'uto', sans-serif !important;
+    font-family: 'uto-light', sans-serif !important;
   }
 `;
 

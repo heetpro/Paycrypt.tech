@@ -3,6 +3,10 @@
 
 @import "tailwindcss";
 
+
+* {
+  /* border: 1px red solid; */
+}
 :root {
   --background: #ffffff;
   --foreground: #171717;

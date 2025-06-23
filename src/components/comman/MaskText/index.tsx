@@ -26,6 +26,10 @@ const MaskText = ({ phrases, tag }: { phrases: string[]; tag: string }) => {
                 initial="initial"
                 animate={isInView ? 'open' : ''}
                 custom={index}
+                style={{
+                  fontSize: 'clamp(2rem, 4.9vw, 400rem)',
+                }}
+                className='leading-none font-bold tracking-tight'
               >
                 {phrase}
               </motion.h1>

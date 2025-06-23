@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { LinkTo } from './styles';
 
 const Button = ({ padding, text }: { padding: string; text: string }) => {
@@ -6,10 +7,12 @@ const Button = ({ padding, text }: { padding: string; text: string }) => {
       style={{
         padding: padding,
       }}
-      className=""
+      className="gap-2 hover:gap-6 transition-all duration-300"
       href="/"
     >
-      {text}
+      <span>{text}
+      </span>
+      <Image src={"/arrow.svg"} alt="arrow-right" width={20} height={20} className='rotate-45' />
     </LinkTo>
   );
 };

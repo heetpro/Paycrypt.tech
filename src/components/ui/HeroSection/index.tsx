@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import { Wrapper, Inner, Pill, HeroTextContainer } from './styles';
+import { Wrapper, Inner, HeroTextContainer } from './styles';
 import { Button } from '@/components';
 import MaskText from '@/components/comman/MaskText';
 import { useIsMobile } from '@/components/global/useIsMobile';
@@ -16,10 +16,18 @@ const HeroSection = () => {
   return (
     <Wrapper>
       <Inner>
-        <Pill>
-          <span>Available now for Chrome</span>
-        </Pill>
+
         <HeroTextContainer>
+          <div className='items-center text-center w-full uppercase gap-2 text-[#D39B96] text-base merih tracking-widest'
+            style={{
+              fontSize: 'clamp(0.875rem, 0.75vw, 100rem)',
+            }}
+          >
+            <span>Available for Mainnet
+
+
+            </span>
+          </div>
           {isMobile ? (
             <>
               <MaskText phrases={mobilePhrases} tag="h1" />
@@ -32,7 +40,10 @@ const HeroSection = () => {
             </>
           )}
         </HeroTextContainer>
-        <Button padding="1rem 2rem" text="Get Started" />
+        <div className="flex gap-4">
+          <Button padding="clamp(0.875rem, 0.75vw, 100rem) 2rem" text="Get Started" />
+          <Button padding="clamp(0.875rem, 0.75vw, 100rem) 2rem" text="Get Started" />
+        </div>
       </Inner>
     </Wrapper>
   );
