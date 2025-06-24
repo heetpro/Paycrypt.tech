@@ -5,6 +5,13 @@ import { styled } from 'styled-components';
 export const Wrapper = styled.section`
   padding: 1rem 0;
   border-bottom: 0.5px solid #3d3d3d;
+  color: #000000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: #ffffff;
 
   @media (max-width: 768px) {
     padding: 0.75rem 0;

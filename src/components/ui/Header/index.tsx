@@ -10,8 +10,6 @@ import {
   AbsoluteLinks,
   BurgerMenu,
 } from './styles';
-import raft_logo from '../../../../public/svgs/raft_logo.svg';
-import ic_bars from '../../../../public/svgs/ic_bars.svg';
 import Button from '@/components/comman/Button';
 import AnimatedLink  from '@/components/comman/AnimatedLink';
 import { useState } from 'react';
@@ -24,14 +22,13 @@ const Header = () => {
     <Wrapper>
       <Inner>
         <LogoContainer>
-          <Image src={raft_logo} alt="raft_logo" priority />
+    <div className="flex text-2xl font-bold uto">PayCrypt</div>
           <BurgerMenu onClick={() => setIsOpen(!isOpen)}>
             <motion.div
               variants={menu as any}
               animate={isOpen ? 'open' : 'closed'}
               initial="closed"
             ></motion.div>
-            <Image src={ic_bars} alt="bars" />
           </BurgerMenu>
         </LogoContainer>
         <Nav className={isOpen ? 'active' : ''}>
