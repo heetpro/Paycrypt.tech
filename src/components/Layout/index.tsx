@@ -17,7 +17,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         }}
       >
         <GlobalStyles />
-        <div className={complete ? 'complete' : 'not_complete'}>
+        <div className={'complete'}>
           <Header />
           {children}
         </div>

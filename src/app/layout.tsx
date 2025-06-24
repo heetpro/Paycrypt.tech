@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import "./fonts.css"
 import Header from "@/components/ui/Header";
+import { Layout } from "@/components";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,8 +19,9 @@ export default function RootLayout({
       <body
         className={`antialiased`}
       >
-        <Header />
-        {children}
+        <Layout>
+          {children}
+        </Layout>
       </body>
     </html>
   );
