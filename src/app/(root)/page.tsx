@@ -1,4 +1,6 @@
 import { Featured, HeroSection, OffersSection } from '@/components'
+import FinancialFreedom from '@/components/ui/FinancialFreedom'
+import FinancialFuture from '@/components/ui/FinancialFuture'
 import React from 'react'
 
 const page = () => {
@@ -7,6 +9,8 @@ const page = () => {
        <HeroSection />
        <Featured /> 
        <OffersSection />
+       <FinancialFuture />
+       <FinancialFreedom />
     </div>
   )
 }
