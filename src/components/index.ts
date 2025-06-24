@@ -7,3 +7,4 @@ export { default as AnimatedLink } from './comman/AnimatedLink';
 export { default as Featured } from './ui/Featured';
 export { default as ParallaxImages } from './comman/ParallaxImages';
 export { default as RevealCover } from './comman/RevealCover';
+export { default as OffersSection } from './ui/OffersSection';

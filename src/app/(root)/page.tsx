@@ -1,4 +1,4 @@
-import { Featured, HeroSection } from '@/components'
+import { Featured, HeroSection, OffersSection } from '@/components'
 import React from 'react'
 
 const page = () => {
@@ -6,6 +6,7 @@ const page = () => {
     <div>
        <HeroSection />
        <Featured /> 
+       <OffersSection />
     </div>
   )
 }
