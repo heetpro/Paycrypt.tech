@@ -4,3 +4,6 @@ export { default as MaskText } from './comman/MaskText';
 export { default as Layout } from './Layout';
 export { default as Header } from './ui/Header';
 export { default as AnimatedLink } from './comman/AnimatedLink';
+export { default as Featured } from './ui/Featured';
+export { default as ParallaxImages } from './comman/ParallaxImages';
+export { default as RevealCover } from './comman/RevealCover';
