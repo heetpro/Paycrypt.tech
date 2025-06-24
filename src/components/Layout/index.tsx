@@ -2,7 +2,7 @@
 
 import { ReactLenis } from '@studio-freight/react-lenis';
 import { GlobalStyles } from './GlobalStyles';
-import {  Header } from '..';
+import {  Footer, Header } from '..';
 import { useState } from 'react';
 import StyledComponentsRegistry from '../global/registry';
 
@@ -20,6 +20,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         <div className={'complete'}>
           <Header />
           {children}
+          <Footer />
         </div>
       </ReactLenis>
     </StyledComponentsRegistry>
