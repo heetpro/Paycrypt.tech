@@ -18,7 +18,7 @@ const HeroSection = () => {
       <Inner>
 
         <HeroTextContainer>
-          <div className='items-center text-center w-full uppercase gap-2 text-[#D39B96] text-base merih tracking-widest'
+          <div className='items-center text-center w-full uppercase gap-2 text-[#cb5248] text-base uto '
             style={{
               fontSize: 'clamp(0.875rem, 0.75vw, 100rem)',
             }}
