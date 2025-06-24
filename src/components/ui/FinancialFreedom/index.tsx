@@ -10,11 +10,8 @@ import {
   Title,
   BriefNote,
 } from './styles';
-import MaskText from '@/components/comman/MaskText';
-import RevealCover from '@/components/comman/RevealCover';
 import { Div } from '../Featured/styles';
 import { imageVariants } from '../Featured';
-import { useIsMobile } from '@/components/global/useIsMobile';
 import financial_freedom_banner from '../../../../public/images/financial_freedom_banner.png';
 import freedom_mobile_banner from '../../../../public/images/freedom_mobile_banner.png';
 import {
@@ -26,6 +23,9 @@ import {
   mobileHeaderPhrase,
   mobileParagraphPhrase,
 } from './constants';
+import { useIsMobile } from '@/components/global/useIsMobile';
+import MaskText from '@/components/comman/MaskText';
+import RevealCover from '@/components/comman/RevealCover';
 
 const FinancialFreedom = () => {
   const isMobile = useIsMobile();

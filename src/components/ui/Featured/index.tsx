@@ -29,7 +29,7 @@ const Featured = () => {
         <ImageContainer>
           <RevealCover />
           <Div
-            variants={imageVariants as any}
+            variants={imageVariants as any  }
             initial="hidden"
             whileInView="visible"
             viewport={{ amount: 0.25, once: true }}
